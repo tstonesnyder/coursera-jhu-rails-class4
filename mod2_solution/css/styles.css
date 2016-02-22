@@ -1,0 +1,103 @@
+/**, *:before, *:after {*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+h1 {
+    text-align: center;
+    margin: 35px 30px;
+    font-size: 175%;
+}
+.col {
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #999999;
+    position: relative;
+}
+p {
+    /*clear: both;*/
+    /*margin: 15px;*/
+    margin: 40px 15px 15px 15px;
+}
+.box-label {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 125%;
+    padding: 3px;
+    width: 40%;
+    /*float: right;*/
+    /*border-top: none;*/
+    /*border-right: none;*/
+    /*margin-bottom: 10px;*/
+    /* position in top right corner of the parent section */
+    position: absolute;
+    right: -1px;  /* overlap the border on .col */
+    top: -1px;
+}
+.box-label-1 {
+    background-color: #d49996;
+}
+.box-label-2 {
+    background-color: #c14544;
+    color: white;
+}
+.box-label-3 {
+    background-color: #e4d197;
+}
+
+/* ------------------------ MOBILE VIEW ------------------------ */
+@media (max-width:767px) {
+    .col {
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
+/* ------------------------ TABLET VIEW ------------------------ */
+@media (min-width:768px) and (max-width:991px) {
+    .col-1 {
+        width: 46.25%;
+        margin-left: 2.5%;
+        margin-right: 1.25%;
+    }
+    .col-2 {
+        width: 46.25%;
+        margin-left: 1.25%;
+        margin-right: 2.5%;
+    }
+    .col-3 {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .box-label-3 {
+        width: 20%
+    }
+}
+
+/* ------------------------ DESKTOP VIEW ------------------------ */
+@media (min-width:992px) {
+    .col {
+        width: 30%;
+    }
+    .col-1 {
+        margin-left: 2.5%;
+        margin-right: 1.25%;
+    }
+    .col-2 {
+        margin-left: 1.25%;
+        margin-right: 1.25%;
+    }
+    .col-3 {
+        margin-left: 1.25%;
+        margin-right: 2.5%;
+    }
+}
