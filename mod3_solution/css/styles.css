@@ -1,0 +1,59 @@
+.navbar {
+    /*background: #C6E6F0;*/
+}
+#navbar-menu ul {
+    background: #C6E6F0;
+    /*border: 1px solid black;*/
+}
+#navbar-menu li {
+    // text-align: center;
+    border-bottom: 1px solid #888;
+    border-right: 1px solid #888;
+    border-left: 1px solid #888;
+}
+#navbar-menu li:first-child {
+    border-top: 1px solid #888;
+}
+
+section {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+section h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+#long-section {
+    height: 1000px;
+    background: #ddd;
+    padding: 15px;
+}
+
+
+/* ---------- OPTIONAL UNGRADED SECTION ---------- */
+.ungraded-label {
+    text-align: center;
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+}
+hr {
+    border-top: 1px solid red;
+    margin: 10px 0;
+}
+#chicken-tile, #beef-tile, #sushi-tile {
+    height: 700px;
+    background: #C6E6F0;
+    padding: 15px;
+    position: relative;
+}
+.link-to-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
